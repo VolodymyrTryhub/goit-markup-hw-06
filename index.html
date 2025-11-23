@@ -42,6 +42,77 @@
                         </li>
                     </ul>
                 </address>
+                <button class="burger-btn" type="button" data-menu-open>
+                    <svg class="burger-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-heroicons-solid"></use>
+                    </svg>
+                </button>
+            </div>
+
+
+            <!--mobile-menu-->
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close" type="button" data-menu-close>
+                        <svg class="icon-button-close" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-nav">
+                        <ul class="menu mobile-header-nav-ul">
+                            <!--menu-->
+                            <li><a href="./index.html" class="mobile-header-nav-item current">Studio</a></li>
+                            <li><a href="" class="mobile-header-nav-item">Portfolio</a></li>
+                            <li><a href="" class="mobile-header-nav-item">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <address>
+                        <ul class="mobile-header-address-ul">
+                            <li>
+                                <a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="mobile-social-list">
+                    <ul class="mobile-social-icon-item">
+                        <li class="mobile-social-item">
+                            <a href="#" class="mobile-social-link">
+                                <svg class="mobile-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-link">
+                                <svg class="mobile-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-link">
+                                <svg class="mobile-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-link">
+                                <svg class="mobile-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>   
             </div>
         </header>
     <main>
@@ -53,7 +124,7 @@
             </div>
         </section>
 
-        <section id="studio" class="section section-values">
+        <section id="studio" class="section section-values hidden">
             <div class="container">
                 <!--values-->
                 <h2 class="visually-hidden">Values</h2>
@@ -101,7 +172,7 @@
             </div>
         </section>
 
-        <section id="team" class="section team-comands">
+        <section id="team" class="section team-comands hidden">
             <div class="container">
                 <!--for our team-->
                 <h2 class="team-name">Our Team</h2>
@@ -293,7 +364,7 @@
                 </ul>
             </div>
         </section>
-        <section id="portfolio" class="section">
+        <section id="portfolio" class="section hidden">
             <div class="container">
                 <!--Our portfolio-->
                 <h2 class="portfolio-part">Our Portfolio</h2>
@@ -410,7 +481,7 @@
         </section>
     </main>
 
-    <footer class="footer-block">
+    <footer class="footer-block hidden">
         <div class="container footer-container">
             <div class="footer-info">
                 <a href="./index.html" class="footer-block-web">Web<span class="footer-block-studio">Studio</span></a>
@@ -475,7 +546,7 @@
         </div>
     </footer>
     
-    <div class="backdrop " data-modal>
+    <div class="backdrop hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-button-close">
                 <svg class="icon-button-close" width="8" height="8">
@@ -531,6 +602,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
