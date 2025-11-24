@@ -175,7 +175,7 @@ button {
         border-radius: 2px;
         width: 100%;
         height: 4px;
-        background-color: #404bbf;
+        
     }
     .navigaciia-address {
         font-style: normal;
@@ -443,7 +443,6 @@ button {
     border: none;
     border-radius: 4px;
     margin: 0 auto;
-    border: none;
     padding: 16px 32px;
 }
 
@@ -570,18 +569,136 @@ button {
     text-align: justify;
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) {
     .section-values {
         max-width: 768px;
     }
 
     .section-list {
         display: flex;
-        
+        flex-wrap: wrap;
+        gap: 24px;
     }
 
     .section-list-element {
         max-width: 100%;
         width: calc((100% - 24px) / 2);
+        padding-bottom: 72px;
     }
+
+    .studio-criterion {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .studio-criterion {
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        color: #2e2f42;
+        margin-bottom: 8px;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .studio-criterion-descrip {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    /* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    } */
+
+    .section-values {
+        min-width: 1158px;
+        display: flex;
+        align-items: center;
+    }
+
+    .section-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+    }
+
+    .section-list-element {
+        max-width: 264px;
+        width: calc((100% - 72px) / 4);
+        flex-direction: column;
+    }
+
+    .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+    }
+}
+/* section3 */
+.team-comands {
+
+}
+
+.team-name {
+
+}
+
+.team-comands-list {
+
+}
+
+.team-item {
+
+}
+
+.team-card-item {
+
+}
+
+.team-card-name {
+
+}
+
+.team-card-parag {
+
+}
+
+.social-list {
+    
+}
+
+.social-item {
+    
+}
+
+.social-link {
+    
+}
+
+.social-icon {
+    
 }
