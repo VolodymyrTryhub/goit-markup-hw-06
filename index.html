@@ -172,7 +172,7 @@
             </div>
         </section>
 
-        <section id="team" class="section team-comands hidden">
+        <section id="team" class="section team-comands">
             <div class="container">
                 <!--for our team-->
                 <h2 class="team-name">Our Team</h2>
@@ -180,6 +180,7 @@
                     <li class="team-item">
                         <img
                             src="./images/card1.jpg"
+                            srcset="./images/card1@2x.jpg 2x"
                             alt="This is Mark Guerrero"
                             width="264"
                             height="260"
@@ -226,6 +227,7 @@
                     <li class="team-item">
                         <img
                             src="./images/card2.jpg"
+                            srcset="./images/card2@2x.jpg 2x"
                             alt="This is Tom Ford"
                             width="264"
                             height="260"
@@ -272,6 +274,7 @@
                     <li class="team-item">
                         <img
                             src="./images/card3.jpg"
+                            srcset="./images/card3@2x.jpg 2x"
                             alt="This is Camila Garcia"
                             width="264"
                             height="260"
@@ -318,6 +321,7 @@
                     <li class="team-item">
                         <img
                             src="./images/card4.jpg"
+                            srcset="./images/card4@2x.jpg 2x"
                             alt="This is Daniel Wilson"
                             width="264"
                             height="260"
@@ -371,11 +375,23 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-image-container">
-                            <img
-                                src="./images/banking-app.jpg"
-                                alt="This is banking app"
-                                width="360"
-                            >
+                            <picture>
+                                <source media="(min-width: 1158px)" 
+                                    srcset="
+                                        ./images/banking-app-desktop@1x.jpg 1x,
+                                        ./images/banking-app-desktop@2x.jpg 2x
+                                    " width="360" height="300" />
+                                <source media="(min-width: 768px)" 
+                                    srcset="
+                                        ./images/banking-app-tablet@1x.jpg 1x,
+                                        ./images/banking-app-tablet@2x.jpg 2x
+                                    " width="356" height="300" />
+                                <img src="./images/banking-app-mobile@1x.jpg" 
+                                    srcset="./images/banking-app-mobile@2x.jpg 2x" 
+                                    alt="This is banking app" 
+                                    width="288"
+                                    height="280">
+                            </picture>
                             <p class="portfolio-hover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App

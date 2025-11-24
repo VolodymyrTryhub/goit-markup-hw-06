@@ -31,6 +31,12 @@ img {
     height: auto;
 }
 
+picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -660,45 +666,131 @@ button {
 }
 /* section3 */
 .team-comands {
-
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #f4f4fd;
 }
 
 .team-name {
-
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    padding-top: 96px;
+    padding-bottom: 72px;
+    
 }
 
 .team-comands-list {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .team-item {
-
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-item {
-
+    padding: 32px 0;
 }
 
 .team-card-name {
-
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-card-parag {
-
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
 }
 
 .social-list {
-    
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
-.social-item {
-    
+.team-comands .social-list {
+    gap: 24px;
 }
 
 .social-link {
-    
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
-    
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
 }
+
+@media screen and (min-width: 768px) {
+    .team-comands {
+        max-width: 768px;
+    }
+
+    .team-comands-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+        max-width: 264px;
+        max-height: 428px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-comands {
+        max-width: 1158px;
+    }
+
+    .team-name {
+        margin-top: 120px;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .team-comands .social-link:hover,
+    .team-comands .social-link:focus {
+        background-color: #404bbf;
+    }
+}
+/* section4 */
