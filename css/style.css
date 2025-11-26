@@ -388,7 +388,7 @@ button {
     margin: 0 auto;
     background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(/images/people-office-mobile@1x.jpg);
+        url(../images/people-office-mobile@1x.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -456,7 +456,7 @@ button {
     .gaslo {
         background-image: 
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(/images/people-office-mobile@2x.jpg);
+            url(../images/people-office-mobile@2x.jpg);
     }
 }
     
@@ -464,7 +464,7 @@ button {
     .gaslo {
         max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(/images/people-office-table@1x.jpg);
+        url(../images/people-office-table@1x.jpg);
     }
 
     .gaslo-container {
@@ -490,7 +490,7 @@ button {
     .gaslo {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(/images/people-office-table@2x.jpg);
+            url(../images/people-office-table@2x.jpg);
     }
 }
 
@@ -499,7 +499,7 @@ button {
         max-width: 1158px;
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(/images/people-office.jpg);
+            url(../images/people-office.jpg);
     }
 
     .gaslo-container {
@@ -527,7 +527,7 @@ button {
     .gaslo {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(/images/people-office-laptop@2x.jpg);
+            url(../images/people-office-laptop@2x.jpg);
     }
 }
 /* section 2 */
