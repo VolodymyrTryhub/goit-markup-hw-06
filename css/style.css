@@ -388,7 +388,6 @@ button {
 /* section 1 */
 .gaslo {
     max-width: 320px;
-    min-height: 432px;
     margin: 0 auto;
     background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -473,7 +472,6 @@ button {
 
     .gaslo-container {
         justify-content: center;
-        min-height: 436px;
     }
 
     .title-gaslo {
@@ -509,7 +507,6 @@ button {
         text-align: center;
         margin-bottom: 48px;
         justify-content: center;
-        min-height: 600px;
     }
 
     .title-gaslo {
